@@ -5,6 +5,7 @@
   },
   "apps": [
     {
+      "deployUrl": "https://adaszyn.github.io/stagecast-login-app/",
       "root": "src",
       "outDir": "dist",
       "assets": [

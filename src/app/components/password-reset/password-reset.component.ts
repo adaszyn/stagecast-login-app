@@ -10,6 +10,7 @@ const EMAIL_REGEX  = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+
 export class PasswordResetComponent implements OnInit {
   public greeting: string = 'No worries! Enter your email and we will send you a link to reset your password.';
   public isValid: boolean = false;
+  public email:string = "";
 
   constructor() {}
 

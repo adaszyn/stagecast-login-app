@@ -7,6 +7,8 @@ import { ActivatedRoute } from '@angular/router'
 })
 export class PasswordSetupComponent implements OnInit {
   greeting: string = "Now you can choose a new password for your Stagecast account."
+  public newPassword: string = '';
+  public repeatedPassword: string = '';
   public password1: string = '';
   public isValid: boolean = false;
   public password2: string = '';

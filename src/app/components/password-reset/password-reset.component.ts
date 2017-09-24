@@ -18,7 +18,7 @@ export class PasswordResetComponent implements OnInit {
     return EMAIL_REGEX.test(email);
   }
 
-  emailChanged({target: {value}}) {
+  emailChanged(value) {
     if (this.validateEmail(value)) {
       (<any>window)._email = value; // feels bad man.
       this.isValid = true

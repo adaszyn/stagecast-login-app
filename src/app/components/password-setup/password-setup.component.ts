@@ -19,12 +19,12 @@ export class PasswordSetupComponent implements OnInit {
       this.email = this.route.snapshot.queryParams.email;
   }
 
-  onPassword1Change ({target: {value}}) {
+  onPassword1Change (value) {
     this.password1 = value
     this.validatePasswords()    
   }
 
-  onPassword2Change ({target: {value}}) {
+  onPassword2Change (value) {
     this.password2 = value
     this.validatePasswords()
   }

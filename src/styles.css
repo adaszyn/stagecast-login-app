@@ -21,20 +21,24 @@ app-root {
 }
 
 .stgc-input { 
-    border: 2px solid #5FEB43;    
-    margin: 2px 0 12px 0px;
-    font-size: 20px;
-    padding: 12px;
+    margin: 2px 0 37px 0px;
+    font-size: 18px;
+    padding: 18px;
     background: #FFFFFF;
     border-radius: 3px;
     font-family: 'Source Sans Pro', sans-serif;
 }
-.stgc-input.invalid {
-    border: 2px solid #EB4343;
-}
 
 .stgc-input:focus, .stgc-input:focus{
     outline: none;
+}
+
+.stgc-greeting {
+    font-size: 20px;
+}
+.stgc-greeting.centered {
+    font-size: 20px;
+    text-align: center;
 }
 
 .input-container {
@@ -50,11 +54,54 @@ app-root {
 .input-container label {
     display: block;
     color: rgba(255, 255, 255, 0.85);
-    font-size: 13px;
+    font-size: 16px;
     letter-spacing: 1px;
+    margin-bottom: 11px;
 }
 .bottom-wrapper {
     position: absolute;
-    width: calc(100% - 100px);
-    bottom: 100px;
+    width: calc(100% - 200px);
+    bottom: 80px;
+}
+
+.app-container {
+    color: #FFFFFF;
+    height: 100%;
+    width: 80%;
+    max-width: 750px;
+    max-height: 560px;
+    background-color: #233947;
+    padding: 161px 97px 97px;
+    box-sizing: border-box;
+    position: relative;
+}
+.app-container.bottom-align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+app-password-setup,
+app-password-change-success,
+app-password-reset {
+    width: 100%;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.setup-password {
+    max-height: 661px;    
+}
+
+@media(max-width: 400px) {
+    .app-container {
+        width: 100%;
+    }
 }

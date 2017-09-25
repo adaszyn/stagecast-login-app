@@ -1,9 +1,10 @@
 .stgc-button {
   border: 2px transparent;
   width: 100%;
-  padding: 20px;
   left: 667px;
   top: 701px;
+  height: 60px;
+  width: 360px;
   color: white;
   background: #E43365;
   border-radius: 100px;

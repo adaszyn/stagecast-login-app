@@ -19,4 +19,9 @@
 .stgc-button.disabled {
   background: #FF8CAC;
   cursor: default;
-}    
+}
+@media(max-width: 650px) {
+  .stgc-button {
+      width: 100%;
+  }
+}

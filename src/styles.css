@@ -100,8 +100,12 @@ app-password-reset {
     max-height: 661px;    
 }
 
-@media(max-width: 400px) {
+@media(max-width: 650px) {
     .app-container {
         width: 100%;
+        padding: 20px;
+    }
+    .bottom-wrapper {
+        width: calc(100% - 40px);
     }
 }
